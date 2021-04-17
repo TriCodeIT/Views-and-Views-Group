@@ -22,10 +22,8 @@
                 android:src="@drawable/pixel_google" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@android:color/white"
+                style="@style/TextContent.Small.White"
+
                 android:layout_gravity="bottom"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp"
@@ -39,8 +37,8 @@
         </FrameLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextContent"
+
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
@@ -49,31 +47,22 @@
             android:textSize="32sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.Subtitle"
+
             android:layout_marginBottom="16dp"
-            android:text="@string/stock"
-            android:textSize="12sp" />
+            android:text="@string/stock" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            style="@style/TextContent"
+
             android:lineSpacingMultiplier="1"
             android:text="@string/content_text"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.Subtitle"
+
             android:layout_marginBottom="8dp"
-            android:text="@string/specification"
-            android:textSize="12sp" />
+            android:text="@string/specification" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -88,17 +77,13 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp"
+                    style="@style/TextSpec.Field"
+
                     android:text="@string/display" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_weight="1"
+                    style="@style/TextSpec.Value"
+
                     android:text="@string/content_specs_display" />
 
             </TableRow>
@@ -109,17 +94,13 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp"
+                    style="@style/TextSpec.Field"
+
                     android:text="@string/size" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_weight="1"
+                    style="@style/TextSpec.Value"
+
                     android:text="@string/content_specs_size" />
 
             </TableRow>
@@ -130,17 +111,13 @@
                 android:layout_marginBottom="8dp">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp"
+                    style="@style/TextSpec.Field"
+
                     android:text="@string/battery" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_weight="1"
+                    style="@style/TextSpec.Value"
+
                     android:text="@string/content_specs_battery" />
 
             </TableRow>
@@ -148,20 +125,17 @@
         </TableLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            style="@style/TextContent.Subtitle"
+
             android:layout_marginBottom="8dp"
-            android:text="@string/seller"
-            android:textSize="12sp" />
+            android:text="@string/seller" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="16dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
@@ -172,20 +146,16 @@
                 android:src="@drawable/photo_2"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                style="@style/TextContent"
+
                 android:layout_toEndOf="@id/profile_image"
                 android:text="@string/my_name" />
 
         </RelativeLayout>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp" />
+                style="@style/ButtonGeneral"
+                android:text="@string/buy"/>
 
     </LinearLayout>
 
